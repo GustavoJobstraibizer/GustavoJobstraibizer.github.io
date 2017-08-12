@@ -1,0 +1,313 @@
+/*
+GERAL
+*/
+
+body {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 15px 35px;
+    background-color: rgba(0,0,0,0.4);
+    font-size: .9em;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -o-flexbox;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28;
+    font-family: Lobster, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/*
+CABEÇALHO
+*/
+
+header {
+    background-image: url('../img/mac.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 50px;
+/*    text-shadow: 2px 2px 2px #000000;*/
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+header .botao {
+    margin-top: 10px;
+}
+
+/*
+SOBRE
+*/
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+/*    background-color: #c9ac31;*/
+    color: #777;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao {
+    background-color: #4d4d4d;
+}
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #bf5d31;
+    align-items: center;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*
+FRASE
+*/
+
+#frase {
+    background-image: url('../img/changes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f1f1f1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/*
+CONTATO
+*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+#contato a {
+    color: #1d1d1d;
+}
+
+#contato a:hover {
+    color: #4d4d4d;
+    cursor: pointer;
+}
+
+hr {
+    width: 100px;      
+    border: 0;
+    border-top: 1px solid #777;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px 100px;
+    color: #777;
+}
+
+footer > p {
+    font-size: 14px;
+}
+
+/*
+MEDIA QUERIRES
+*/
+
+@media screen and (min-width: 768px) {
+    
+    /*
+    NAVEGAÇÃO
+    */
+    
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    /*
+    CABEÇALHO
+    */
+    
+    header {
+        height: 900px;
+        height: 90vh;
+        justify-content: center;
+    }
+    
+    /*
+    SOBRE
+    */
+    
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    
+    /*
+    SERVIÇOS
+    */
+    
+    #servicos {
+        height: 300px;
+        height: 60vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+/*        max-width: 1000px;*/
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /*
+    FRASE
+    */
+    #frase {
+        flex-direction: row;
+        height: 400px;
+        height: 40vh;
+        justify-content: space-around;
+        min-height: 300px;
+    }
+    
+    #frase h3 {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 110px;
+        max-width: 1000px;
+    }
+
+    
+    /*
+    CONTATO
+    */
+    
+    #contato {
+        flex-direction: row;
+        height: 400px;
+        height: 40vh;
+        min-height: 300px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    #contato p {
+        width: 100%;
+    }
+
+    
+}
+
+
