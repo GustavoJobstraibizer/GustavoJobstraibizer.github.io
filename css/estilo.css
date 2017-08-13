@@ -1,6 +1,4 @@
-/*
-GERAL
-*/
+/* GERAL */
 
 body {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
@@ -22,9 +20,7 @@ h1, h2, h3 {
     font-size: .9em;
 }
 
-/*
-NAVEGAÇÃO
-*/
+/* NAVEGAÇÃO */
 
 nav {
     display: flex;
@@ -66,9 +62,11 @@ nav ul li a {
     color: #f1f1f1;
 }
 
-/*
-CABEÇALHO
-*/
+nav ul li a:hover {
+	color: #c3c3c3;
+}
+
+/* CABEÇALHO */
 
 header {
     background-image: url('../img/mac.jpeg');
@@ -96,16 +94,18 @@ header .botao {
     margin-top: 10px;
 }
 
-/*
-SOBRE
-*/
+header .botao:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+/* SOBRE */
 
 #sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 20px 20px;
+    padding: 50px;
 /*    background-color: #c9ac31;*/
     color: #777;
 }
@@ -119,15 +119,13 @@ SOBRE
     background-color: #4d4d4d;
 }
 
-/*
-SERVIÇOS
-*/
+/* SERVIÇOS */
 
 #servicos {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #bf5d31;
+    background-color: #000000;
     align-items: center;
 }
 
@@ -139,9 +137,7 @@ SERVIÇOS
     margin-top: 30px;
 }
 
-/*
-FRASE
-*/
+/* FRASE */
 
 #frase {
     background-image: url('../img/changes.jpg');
@@ -156,9 +152,7 @@ FRASE
     text-shadow: 2px 2px 2px #000000;
 }
 
-/*
-CONTATO
-*/
+/* CONTATO */
 
 #contato {
     display: flex;
@@ -172,6 +166,7 @@ CONTATO
 
 #contato a {
     color: #1d1d1d;
+	text-decoration: none;
 }
 
 #contato a:hover {
@@ -185,32 +180,25 @@ hr {
     border-top: 1px solid #777;
 }
 
-/*
-FOOTER
-*/
+/* FOOTER */
 
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 100px 100px;
+    flex-direction: row;
+	justify-content: center;
+    padding: 0 10px 80px;
     color: #777;
 }
 
 footer > p {
-    font-size: 14px;
+    font-size: .9em;
 }
 
-/*
-MEDIA QUERIRES
-*/
+/* MEDIA QUERIRE */
 
 @media screen and (min-width: 768px) {
     
-    /*
-    NAVEGAÇÃO
-    */
+    /* NAVEGAÇÃO */
     
     nav {
         flex-direction: row;
@@ -222,9 +210,7 @@ MEDIA QUERIRES
         width: 100%;
     }
     
-    /*
-    CABEÇALHO
-    */
+    /* CABEÇALHO */
     
     header {
         height: 900px;
@@ -232,9 +218,7 @@ MEDIA QUERIRES
         justify-content: center;
     }
     
-    /*
-    SOBRE
-    */
+    /* SOBRE */
     
     #sobre {
         height: 250px;
@@ -243,9 +227,7 @@ MEDIA QUERIRES
         min-height: 250px;
     }
     
-    /*
-    SERVIÇOS
-    */
+    /* SERVIÇOS */
     
     #servicos {
         height: 300px;
@@ -269,9 +251,7 @@ MEDIA QUERIRES
         padding: 0 10px;
     }
     
-    /*
-    FRASE
-    */
+    /* FRASE */
     #frase {
         flex-direction: row;
         height: 400px;
@@ -288,9 +268,7 @@ MEDIA QUERIRES
     }
 
     
-    /*
-    CONTATO
-    */
+    /* CONTATO */
     
     #contato {
         flex-direction: row;
@@ -306,6 +284,8 @@ MEDIA QUERIRES
     #contato p {
         width: 100%;
     }
+	
+	/* FOOTER */
 
     
 }
