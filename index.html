@@ -1,132 +1,162 @@
 <!DOCTYPE html>
-   <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://use.fontawesome.com/e19c800b52.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700|Roboto+Slab:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/estilo.css">
-        <title>Gustavo jobstraibizer</title>
-    </head>
-    
-    <body>
-        <!-- Menu -->
-           <nav>
-<!--                <a href="#">Gustavo Jobstraibizer</a>-->
-                <ul>
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#servicos">SERVIÇOS</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
-                </ul>
-           </nav>          
-        <!--/ Menu -->
-        
-        <!-- cabecalho -->
-        
-        <header>
-            <h1>Gustavo Henrique Jobstraibizer</h1>
-            <h3>Analista Desenvolvedor de sistemas</h3>
-            <a href="#sobre" class="botao">VER MAIS</a>
-        </header>
-        
-        <!--/ cabecalho -->
-        
-        <!-- section sobre -->
-        
-        <section id="sobre">
-            <h2>Seja-Bem vindo !</h2>
-            <p>Sou Gustavo H. Jobstraibizer, analista e desenvolvedor de sistemas Web.</p>
-<!--            <a href="#contato" class="botao">ENTRE EM CONTATO</a>-->
-        </section>
-        
-        <!--/ section sobre -->
-        
-        <!-- section servicos -->
-        
-        <section id="servicos">
-            <h2>SERVIÇOS</h2>
-            <div>
-                <img src="img/configs.png" alt="Engrenagens">
-                <h3>Facil integração</h3>
-                <p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
-            </div>
-            <div>
-                <img src="img/site.png" alt="Navegador">
-                <h3>Melhores práticas</h3>
-                <p>Código legivel, desenvolvido com as melhores práticas e oque à de mais novo na web.</p>
-            </div>
-            <div>
-                <img src="img/coracao.png" alt="Coração">
-                <h3>Feito com Amor</h3>
-                <p>Pensando sempre no usuário final, para uma fácil compreensão do que se quer entregar.</p>
-            </div>
-<!--
-            <div>
-                <i class="fa fa-mobile fa-fw fa-5x" aria-hidden="true"></i>
-                <h3>Responsivo</h3>
-                <p>Vizualise seu site de forma agradável, utilizando qualquer dispositivo.</p>
-            </div>
--->
-        </section>
-        
-        <!--/ section servicos -->
-        
-        <!-- Frase -->
-        
-        <section id="frase">
-            <h3>Quando você é diferente, o mundo todo é diferente.
-                Não é uma questão de criar um mundo diferente, 
-                é apenas uma questão de criar um você diferente.
-                Você é o seu mundo, então se você muda, o mundo muda.</h3>
-        </section>
-        
-        <!--/ Frase -->
-        
-        <!-- contato -->
-        
-        <section id="contato">
-            <h2>CONTATO</h2>
-            
-            <p><i class="fa fa-envelope fa-fw" aria-hidden="true"></i><a href="mailto:gustavojobs_dev@outlook.com" target="_blank">gustavojobs_dev@outlook.com</a></p>
-            
-            <div>
-                <p><a href="https://www.facebook.com/guh.jobstraibizer" target="_blank"><i class="fa fa-facebook-official fa-fw fa-3x" aria-hidden="true"></i></a></p>
-            </div>
-            
-            <div>
-                <p><a href="https://br.linkedin.com/in/ghjobstraibizer" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x" aria-hidden="true"></i></a></p>
-            </div>
-        </section>
-        
-        <hr>
-        
-        <!--/ contato -->
-        
-        <footer>
-            <p>Copyright &copy; Gustavo H. J 2017</p>
-        </footer>
-        
-        <script src="js/jquery.js"></script>
-        
-        <script>
-            // Scrolls ao selecionar item da navbar
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+<html lang="pt-br">
 
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
-            });
-        </script>
-        
-    </body>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- SEO Geral -->
+  <title>Gustavo jobstraibizer - Desenvolvedor Web</title>
+  <meta name="description" content="Olá meu nome é Gustavo H. Jobstraibizer e sou desenvolvedor web">
+  <meta name="author" content="Gustavo Jobstraibizer">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Gustavo Jobstraibizer">
+  <meta itemprop="description" content="Olá meu nome é Gustavo H. Jobstraibizer e sou desenvolvedor web">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/e19c800b52.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700|Roboto+Slab:400,700|Source+Sans+Pro:400,700"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li>
+        <a href="#sobre">SOBRE</a>
+      </li>
+      <li>
+        <a href="#servicos">SERVIÇOS</a>
+      </li>
+      <li>
+        <a href="#contato">CONTATO</a>
+      </li>
+    </ul>
+  </nav>
+  <!--/ Menu -->
+
+  <!-- cabecalho -->
+  <header>
+    <h1>Gustavo Henrique Jobstraibizer</h1>
+    <h3>Desenvolvedor web</h3>
+    <a href="#sobre" class="botao">VER MAIS</a>
+  </header>
+  <!--/ cabecalho -->
+
+  <!-- section sobre -->
+  <section id="sobre">
+    <h2>Seja-Bem vindo !</h2>
+    <p>Sou Gustavo H. Jobstraibizer, tenho 27 anos, sou Desenvolvedor Web. Tenho um pouco mais de 3 anos de experiência com
+      desenvolvimento web.
+    </p>
+  </section>
+  <!--/ section sobre -->
+
+  <!-- section servicos -->
+  <section id="servicos">
+    <h2>SERVIÇOS</h2>
+    <div>
+      <i class="fa fa-cogs fa-5x"></i>
+      <!-- <img src="img/configs.png" alt="Engrenagens"> -->
+      <h3>Facil integração</h3>
+      <p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
+    </div>
+    <div>
+      <i class="fa fa-code fa-5x"></i>
+      <h3>Melhores práticas</h3>
+      <p>Desenvolvido com as melhores práticas e com oque à de mais novo na web.</p>
+    </div>
+    <div>
+      <i class="fa fa-heart fa-5x"></i>
+      <!-- <img src="img/coracao.png" alt="Coração"> -->
+      <h3>Feito com Amor</h3>
+      <p>Pensando sempre no usuário final, para uma fácil compreensão do que se quer entregar.</p>
+    </div>
+    <div>
+      <i class="fa fa-globe fa-5x"></i>
+      <h3>SEO</h3>
+      <p>Seu site melhor posicionado nos motores de busca.</p>
+    </div>
+  </section>
+
+  <!--/ section servicos -->
+
+  <!-- Frase -->
+
+  <section id="frase">
+    <h3>Quando você é diferente, o mundo todo é diferente. Não é uma questão de criar um mundo diferente, é apenas uma questão
+      de criar um você diferente. Você é o seu mundo, então se você muda, o mundo muda.</h3>
+  </section>
+
+  <!--/ Frase -->
+
+  <!-- contato -->
+
+  <section id="contato">
+    <h2>CONTATO</h2>
+
+    <p>
+      <i class="fa fa-envelope fa-fw"></i>
+      <a href="mailto:gustavojobs_dev@outlook.com" target="_blank">gustavojobs_dev@outlook.com</a>
+    </p>
+
+    <div>
+      <p>
+        <a href="https://www.facebook.com/guh.jobstraibizer" target="_blank">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <a href="https://br.linkedin.com/in/ghjobstraibizer" target="_blank">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!--/ contato -->
+
+  <footer>
+    <p>Copyright &copy; Gustavo H. J 2018
+      <small>
+        ( Made in
+        <img src="img/flag.svg" class="flag-icon flag-icon-id"> )
+      </small>
+    </p>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+
+  <script>
+    // Scrolls ao selecionar item da navbar
+    $(function () {
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
 </html>
